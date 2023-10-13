@@ -36,8 +36,6 @@ function seleccionarMascotaJugador() {
         alert('selecciona una mascota')
     }
 
-    
-
 }
 
 
@@ -99,22 +97,23 @@ function combate(){
         crearMensaje('EMPATE🖤💻⬛')
     } else if (ataqueJugador == 'AGUA' && ataqueEnemigo == 'FUEGO'){
         crearMensaje(' GANADOR🥳🎉🎈🎖')
-        vidasEnemigo --
+        vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
     } else if (ataqueJugador == 'FUEGO' && ataqueEnemigo == 'TIERRA'){
         crearMensaje('  GANADOR🥳🎉🎈🎖')
-        vidasEnemigo --
+        vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
     } else if (ataqueJugador == 'TIERRA' && ataqueEnemigo == 'AGUA'){
         crearMensaje('  GANADOR🥳🎉🎈🎖')
-        vidasEnemigo --
+        vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
 
-    } else
+    } else {
         crearMensaje(' HAZ PERDIDO😭')
-        vidasJugador --
+        vidasJugador--
         spanVidasJugador.innerHTML = vidasJugador
-
+    }
+    
 }
 
 
